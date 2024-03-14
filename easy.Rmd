@@ -1,4 +1,11 @@
-
+---
+title: "My document"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
 # Title
 ## Second heading
 ### 3rd heading
