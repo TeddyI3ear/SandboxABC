@@ -1,0 +1,55 @@
+## Introduction
+## R-code
+### Todos 1.
+```{r}
+numbers <- c(1,2,3,4)
+sum(numbers)
+```
+### Todos 2.
+```{r}
+sqrt(c(4,9))
+```
+### Todos 3.
+
+
+```{r}
+rnorm(n=100, mean=0, sd=1 )
+```
+### Todos 4.
+
+```{r}
+now <- as.numeric(substring(paste(Sys.Date()),1,4))
+started <- 2024
+born <- 2003
+spent <- (now-started)/(now-born)*100
+answ <- round(spent)
+```
+
+
+```{r}
+library(ggplot2)
+
+# Create a simple data frame
+data <- data.frame(
+  x = c(1, 2, 3, 4, 5),
+  y = c(2, 4, 6, 8, 10)
+)
+
+# Create a scatter plot using ggplot2
+ggplot(data, aes(x = x, y = y)) +
+  geom_point()
+```
+
+```{r}
+library(knitr)
+library(kableExtra)
+
+data <- data.frame(
+  Name = c("Alice", "Bob", "Charlie"),
+  Age = c(25, 30, 35),
+  Score = c(80, 85, 90)
+)
+
+kable(data, format = "html")
+```
+
